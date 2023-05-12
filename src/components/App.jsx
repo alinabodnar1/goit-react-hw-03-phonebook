@@ -76,7 +76,7 @@ export default class App extends Component {
   
   render() {
     
-    const { filter, isCreated, isDelete} = this.state;
+    const { filter } = this.state;
     return (
       <div style={{marginLeft: "20px"}}>
         <h1>Phonebook</h1>

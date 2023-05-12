@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from '@mui/material/Button';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
+import List from '@mui/material/List';
 
 export default class ContactsListItem extends Component {
     state = {
@@ -19,7 +20,7 @@ export default class ContactsListItem extends Component {
     render() {
         const { contact, onDelete } = this.props;
         return (
-            <li key={contact.id}>
+            <List key={contact.id}>
                 {contact.name} {' '}
                 {contact.number} {' '}
                 <Button
@@ -29,7 +30,7 @@ export default class ContactsListItem extends Component {
                 >    
                     DELETE
                 </Button>
-            </li>
+            </List>
         )
     }
 }

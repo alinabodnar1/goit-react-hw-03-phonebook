@@ -73,7 +73,7 @@ export default class App extends Component {
     }));
  }
   
-  //---------------------------------------------------------------
+  
   render() {
     
     const { filter, isCreated, isDelete} = this.state;
